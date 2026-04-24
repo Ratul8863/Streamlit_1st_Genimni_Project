@@ -62,7 +62,7 @@ Output format:
 - **Topic 2**: short explanation
 - **Topic 3**: short explanation"""
 
-    return _call_gemini("gemini-2.0-flash", [*images, prompt])
+    return _call_gemini("gemini-3-flash-preview", [*images, prompt])
 
 
 def genarate_audio(text: str) -> io.BytesIO:
@@ -93,4 +93,4 @@ Format each question like this:
 
 Make sure the questions test genuine understanding, not just recall."""
 
-    return _call_gemini("gemini-2.0-flash", [*images, prompt])
+    return _call_gemini("gemini-3-flash-preview", [*images, prompt])
